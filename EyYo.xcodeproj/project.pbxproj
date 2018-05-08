@@ -3,18 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A7B848C20A22B680078C8B5 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7B848B20A22B680078C8B5 /* SWRevealViewController.m */; };
 		4AC91E2C209E985D00A50893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC91E2B209E985D00A50893 /* AppDelegate.swift */; };
 		4AC91E2E209E985D00A50893 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC91E2D209E985D00A50893 /* ViewController.swift */; };
 		4AC91E31209E985D00A50893 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AC91E2F209E985D00A50893 /* Main.storyboard */; };
 		4AC91E33209E985D00A50893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AC91E32209E985D00A50893 /* Assets.xcassets */; };
 		4AC91E36209E985D00A50893 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AC91E34209E985D00A50893 /* LaunchScreen.storyboard */; };
+		A4D71BC4F587EDE4EB883203 /* Pods_EyYo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FE0309528F3066BCCDC679 /* Pods_EyYo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BA3325A81480734929D3ACE /* Pods-EyYo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyYo.release.xcconfig"; path = "Pods/Target Support Files/Pods-EyYo/Pods-EyYo.release.xcconfig"; sourceTree = "<group>"; };
+		27FE0309528F3066BCCDC679 /* Pods_EyYo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EyYo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A7B848920A22B680078C8B5 /* EyYo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EyYo-Bridging-Header.h"; sourceTree = "<group>"; };
+		4A7B848A20A22B680078C8B5 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		4A7B848B20A22B680078C8B5 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		4AC91E28209E985D00A50893 /* EyYo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EyYo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC91E2B209E985D00A50893 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AC91E2D209E985D00A50893 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,7 @@
 		4AC91E32209E985D00A50893 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AC91E35209E985D00A50893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AC91E37209E985D00A50893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94FD892295A40392C00AAF51 /* Pods-EyYo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyYo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EyYo/Pods-EyYo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4D71BC4F587EDE4EB883203 /* Pods_EyYo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A7B848820A22B220078C8B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A7B848A20A22B680078C8B5 /* SWRevealViewController.h */,
+				4A7B848B20A22B680078C8B5 /* SWRevealViewController.m */,
+				4A7B848920A22B680078C8B5 /* EyYo-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		4AC91E1F209E985D00A50893 = {
 			isa = PBXGroup;
 			children = (
 				4AC91E2A209E985D00A50893 /* EyYo */,
 				4AC91E29209E985D00A50893 /* Products */,
+				F9A9E5C42D2B3F30F50D96A2 /* Pods */,
+				E390C81F08C5079FDFEA308D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +75,7 @@
 		4AC91E2A209E985D00A50893 /* EyYo */ = {
 			isa = PBXGroup;
 			children = (
+				4A7B848820A22B220078C8B5 /* Supporting Files */,
 				4AC91E2B209E985D00A50893 /* AppDelegate.swift */,
 				4AC91E2D209E985D00A50893 /* ViewController.swift */,
 				4AC91E2F209E985D00A50893 /* Main.storyboard */,
@@ -64,6 +86,23 @@
 			path = EyYo;
 			sourceTree = "<group>";
 		};
+		E390C81F08C5079FDFEA308D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27FE0309528F3066BCCDC679 /* Pods_EyYo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9A9E5C42D2B3F30F50D96A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94FD892295A40392C00AAF51 /* Pods-EyYo.debug.xcconfig */,
+				0BA3325A81480734929D3ACE /* Pods-EyYo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AC91E3A209E985D00A50893 /* Build configuration list for PBXNativeTarget "EyYo" */;
 			buildPhases = (
+				5221F41A810C845285F219B6 /* [CP] Check Pods Manifest.lock */,
 				4AC91E24209E985D00A50893 /* Sources */,
 				4AC91E25209E985D00A50893 /* Frameworks */,
 				4AC91E26209E985D00A50893 /* Resources */,
+				DC798048110434E2D5FA84EC /* [CP] Embed Pods Frameworks */,
+				ABA71ECA6C086BDB581FBBC4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,11 +138,13 @@
 				TargetAttributes = {
 					4AC91E27209E985D00A50893 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 4AC91E23209E985D00A50893 /* Build configuration list for PBXProject "EyYo" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -130,6 +174,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5221F41A810C845285F219B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EyYo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABA71ECA6C086BDB581FBBC4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EyYo/Pods-EyYo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC798048110434E2D5FA84EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EyYo/Pods-EyYo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EyYo/Pods-EyYo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4AC91E24209E985D00A50893 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +241,7 @@
 			files = (
 				4AC91E2E209E985D00A50893 /* ViewController.swift in Sources */,
 				4AC91E2C209E985D00A50893 /* AppDelegate.swift in Sources */,
+				4A7B848C20A22B680078C8B5 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,25 +375,25 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		4AC91E3B209E985D00A50893 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94FD892295A40392C00AAF51 /* Pods-EyYo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 979WE2JCPD;
 				INFOPLIST_FILE = EyYo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stephenreyes.EyYo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EyYo/Supporting Files/EyYo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -296,17 +401,17 @@
 		};
 		4AC91E3C209E985D00A50893 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BA3325A81480734929D3ACE /* Pods-EyYo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 979WE2JCPD;
 				INFOPLIST_FILE = EyYo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stephenreyes.EyYo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EyYo/Supporting Files/EyYo-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
