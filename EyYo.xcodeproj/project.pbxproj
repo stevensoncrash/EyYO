@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A01115020A37BA20071667A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A01114F20A37BA20071667A /* GradientView.swift */; };
 		4A7B848C20A22B680078C8B5 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7B848B20A22B680078C8B5 /* SWRevealViewController.m */; };
 		4A7B849220A25F5D0078C8B5 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7B849120A25F5D0078C8B5 /* ChatVC.swift */; };
 		4A7B849420A25F6C0078C8B5 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7B849320A25F6C0078C8B5 /* ChannelVC.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		0BA3325A81480734929D3ACE /* Pods-EyYo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyYo.release.xcconfig"; path = "Pods/Target Support Files/Pods-EyYo/Pods-EyYo.release.xcconfig"; sourceTree = "<group>"; };
 		27FE0309528F3066BCCDC679 /* Pods_EyYo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EyYo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A01114F20A37BA20071667A /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		4A7B848920A22B680078C8B5 /* EyYo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EyYo-Bridging-Header.h"; sourceTree = "<group>"; };
 		4A7B848A20A22B680078C8B5 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		4A7B848B20A22B680078C8B5 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 		4A7B848F20A25F3A0078C8B5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4A01114F20A37BA20071667A /* GradientView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			files = (
 				4A7B849420A25F6C0078C8B5 /* ChannelVC.swift in Sources */,
 				4A7B849220A25F5D0078C8B5 /* ChatVC.swift in Sources */,
+				4A01115020A37BA20071667A /* GradientView.swift in Sources */,
 				4AC91E2C209E985D00A50893 /* AppDelegate.swift in Sources */,
 				4A7B848C20A22B680078C8B5 /* SWRevealViewController.m in Sources */,
 			);
