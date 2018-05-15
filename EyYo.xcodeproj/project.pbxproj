@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4A01115020A37BA20071667A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A01114F20A37BA20071667A /* GradientView.swift */; };
+		4A0F23A620A54590000E24DD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F23A520A54590000E24DD /* Constants.swift */; };
+		4A4CF3FE20AA77F000CC8DEB /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4CF3FD20AA77F000CC8DEB /* LoginVC.swift */; };
 		4A7B848C20A22B680078C8B5 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7B848B20A22B680078C8B5 /* SWRevealViewController.m */; };
 		4A7B849220A25F5D0078C8B5 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7B849120A25F5D0078C8B5 /* ChatVC.swift */; };
 		4A7B849420A25F6C0078C8B5 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7B849320A25F6C0078C8B5 /* ChannelVC.swift */; };
@@ -22,6 +24,8 @@
 		0BA3325A81480734929D3ACE /* Pods-EyYo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyYo.release.xcconfig"; path = "Pods/Target Support Files/Pods-EyYo/Pods-EyYo.release.xcconfig"; sourceTree = "<group>"; };
 		27FE0309528F3066BCCDC679 /* Pods_EyYo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EyYo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A01114F20A37BA20071667A /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		4A0F23A520A54590000E24DD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4A4CF3FD20AA77F000CC8DEB /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		4A7B848920A22B680078C8B5 /* EyYo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EyYo-Bridging-Header.h"; sourceTree = "<group>"; };
 		4A7B848A20A22B680078C8B5 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		4A7B848B20A22B680078C8B5 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -48,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A0F23A420A5457A000E24DD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4A0F23A520A54590000E24DD /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		4A7B848820A22B220078C8B5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +75,7 @@
 			children = (
 				4A7B849120A25F5D0078C8B5 /* ChatVC.swift */,
 				4A7B849320A25F6C0078C8B5 /* ChannelVC.swift */,
+				4A4CF3FD20AA77F000CC8DEB /* LoginVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -103,6 +116,7 @@
 		4AC91E2A209E985D00A50893 /* EyYo */ = {
 			isa = PBXGroup;
 			children = (
+				4A0F23A420A5457A000E24DD /* Utilities */,
 				4A7B849020A25F440078C8B5 /* Models */,
 				4A7B848F20A25F3A0078C8B5 /* Views */,
 				4A7B848E20A25F340078C8B5 /* Controllers */,
@@ -271,9 +285,11 @@
 			files = (
 				4A7B849420A25F6C0078C8B5 /* ChannelVC.swift in Sources */,
 				4A7B849220A25F5D0078C8B5 /* ChatVC.swift in Sources */,
+				4A4CF3FE20AA77F000CC8DEB /* LoginVC.swift in Sources */,
 				4A01115020A37BA20071667A /* GradientView.swift in Sources */,
 				4AC91E2C209E985D00A50893 /* AppDelegate.swift in Sources */,
 				4A7B848C20A22B680078C8B5 /* SWRevealViewController.m in Sources */,
+				4A0F23A620A54590000E24DD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
