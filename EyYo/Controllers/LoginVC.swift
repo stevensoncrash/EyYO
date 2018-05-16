@@ -10,6 +10,10 @@ import UIKit
 
 class LoginVC: UIViewController {
     
+    @IBAction func createAccntBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: TO_CREATE_ACCOUNT, sender: nil)
+    }
+    
     
     @IBAction func closedBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
