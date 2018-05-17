@@ -14,6 +14,7 @@
 		4A7B849220A25F5D0078C8B5 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7B849120A25F5D0078C8B5 /* ChatVC.swift */; };
 		4A7B849420A25F6C0078C8B5 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7B849320A25F6C0078C8B5 /* ChannelVC.swift */; };
 		4AB60C5220ACCCED00613D1D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB60C5120ACCCED00613D1D /* AuthService.swift */; };
+		4AB60C5420AD13B700613D1D /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB60C5320AD13B700613D1D /* RoundedButton.swift */; };
 		4AC91E2C209E985D00A50893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC91E2B209E985D00A50893 /* AppDelegate.swift */; };
 		4AC91E31209E985D00A50893 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AC91E2F209E985D00A50893 /* Main.storyboard */; };
 		4AC91E33209E985D00A50893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AC91E32209E985D00A50893 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		4A7B849120A25F5D0078C8B5 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		4A7B849320A25F6C0078C8B5 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		4AB60C5120ACCCED00613D1D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		4AB60C5320AD13B700613D1D /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		4AC91E28209E985D00A50893 /* EyYo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EyYo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC91E2B209E985D00A50893 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AC91E30209E985D00A50893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				4A01114F20A37BA20071667A /* GradientView.swift */,
+				4AB60C5320AD13B700613D1D /* RoundedButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A7B849420A25F6C0078C8B5 /* ChannelVC.swift in Sources */,
+				4AB60C5420AD13B700613D1D /* RoundedButton.swift in Sources */,
 				4A7B849220A25F5D0078C8B5 /* ChatVC.swift in Sources */,
 				4AF74E3620ABA68900D28E62 /* CreateAccountVC.swift in Sources */,
 				4AB60C5220ACCCED00613D1D /* AuthService.swift in Sources */,
