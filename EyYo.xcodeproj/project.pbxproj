@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4A01115020A37BA20071667A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A01114F20A37BA20071667A /* GradientView.swift */; };
 		4A0F23A620A54590000E24DD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F23A520A54590000E24DD /* Constants.swift */; };
+		4A202F9E20B3788800618A80 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A202F9D20B3788800618A80 /* AvatarPickerVC.swift */; };
+		4A202FA020B37DF700618A80 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A202F9F20B37DF700618A80 /* AvatarCell.swift */; };
 		4A4CF3FE20AA77F000CC8DEB /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4CF3FD20AA77F000CC8DEB /* LoginVC.swift */; };
 		4A7B848C20A22B680078C8B5 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7B848B20A22B680078C8B5 /* SWRevealViewController.m */; };
 		4A7B849220A25F5D0078C8B5 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7B849120A25F5D0078C8B5 /* ChatVC.swift */; };
@@ -29,6 +31,8 @@
 		27FE0309528F3066BCCDC679 /* Pods_EyYo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EyYo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A01114F20A37BA20071667A /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		4A0F23A520A54590000E24DD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4A202F9D20B3788800618A80 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
+		4A202F9F20B37DF700618A80 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		4A4CF3FD20AA77F000CC8DEB /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		4A7B848920A22B680078C8B5 /* EyYo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EyYo-Bridging-Header.h"; sourceTree = "<group>"; };
 		4A7B848A20A22B680078C8B5 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 				4A7B849320A25F6C0078C8B5 /* ChannelVC.swift */,
 				4A4CF3FD20AA77F000CC8DEB /* LoginVC.swift */,
 				4AF74E3520ABA68900D28E62 /* CreateAccountVC.swift */,
+				4A202F9D20B3788800618A80 /* AvatarPickerVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -94,6 +99,7 @@
 			children = (
 				4A01114F20A37BA20071667A /* GradientView.swift */,
 				4AB60C5320AD13B700613D1D /* RoundedButton.swift */,
+				4A202F9F20B37DF700618A80 /* AvatarCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -288,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A7B849420A25F6C0078C8B5 /* ChannelVC.swift in Sources */,
+				4A202F9E20B3788800618A80 /* AvatarPickerVC.swift in Sources */,
 				4AB60C5420AD13B700613D1D /* RoundedButton.swift in Sources */,
 				4A7B849220A25F5D0078C8B5 /* ChatVC.swift in Sources */,
 				4AA49B1A20AF578F002714DB /* UserDataService.swift in Sources */,
@@ -295,6 +302,7 @@
 				4AB60C5220ACCCED00613D1D /* AuthService.swift in Sources */,
 				4A4CF3FE20AA77F000CC8DEB /* LoginVC.swift in Sources */,
 				4A01115020A37BA20071667A /* GradientView.swift in Sources */,
+				4A202FA020B37DF700618A80 /* AvatarCell.swift in Sources */,
 				4AC91E2C209E985D00A50893 /* AppDelegate.swift in Sources */,
 				4A7B848C20A22B680078C8B5 /* SWRevealViewController.m in Sources */,
 				4A0F23A620A54590000E24DD /* Constants.swift in Sources */,

@@ -63,7 +63,7 @@ class CreateAccountVC: UIViewController {
     }
     
     @IBAction func chooseAvatarPressed(_ sender: Any) {
-        //do something
+        performSegue(withIdentifier: TO_AVATAR_PICKER, sender: nil)
     }
     
     @IBAction func closedPressed(_ sender: Any) {
