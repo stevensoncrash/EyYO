@@ -452,7 +452,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="smackBack"/>
                                 <connections>
-                                    <action selector="backPressed:" destination="PsZ-Vv-6Hq" eventType="touchUpInside" id="SzA-xI-SkS"/>
+                                    <action selector="backPressed:" destination="PsZ-Vv-6Hq" eventType="touchUpInside" id="DZr-z7-BaT"/>
                                     <action selector="closedPressed:" destination="8yO-kp-bWS" eventType="touchUpInside" id="1Q1-mb-zQI"/>
                                 </connections>
                             </button>

@@ -25,10 +25,10 @@ class UserDataService {
         self.avatarColor = avatarColor
         self.email = email
         self.name = name
+    }
         
         func setAvatarName(avatarName: String) {
             self.avatarName = avatarName
         
         }
     }
-}
