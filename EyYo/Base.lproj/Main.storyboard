@@ -382,8 +382,7 @@
                                     <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="GernateBGPressed:" destination="xKO-2T-HnB" eventType="touchUpInside" id="RF8-Ve-GtB"/>
-                                    <action selector="generateBGPressed:" destination="xKO-2T-HnB" eventType="touchUpInside" id="LKa-CM-Lnj"/>
+                                    <action selector="generateBPressed:" destination="xKO-2T-HnB" eventType="touchUpInside" id="Zw4-gN-Cs7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j9P-Pz-evf">
@@ -444,8 +443,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdH-43-jfl">
-                                <rect key="frame" x="16" y="20" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdH-43-jfl">
+                                <rect key="frame" x="16" y="28" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="uZi-LS-Qpg"/>
                                     <constraint firstAttribute="width" constant="30" id="zwx-Ha-EAo"/>
@@ -470,8 +469,8 @@
                                     <action selector="segmentControlChanged:" destination="PsZ-Vv-6Hq" eventType="valueChanged" id="th3-Gs-VCT"/>
                                 </connections>
                             </segmentedControl>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="31g-CL-fhw">
-                                <rect key="frame" x="0.0" y="58" width="375" height="589"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="31g-CL-fhw">
+                                <rect key="frame" x="0.0" y="78" width="375" height="589"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="c0S-V4-9yg">
                                     <size key="itemSize" width="100" height="100"/>
@@ -508,13 +507,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="09a-YI-gaM" firstAttribute="centerX" secondItem="cPD-ku-476" secondAttribute="centerX" id="4nc-Qg-JlQ"/>
-                            <constraint firstItem="jXp-aB-kae" firstAttribute="top" secondItem="31g-CL-fhw" secondAttribute="bottom" id="5yS-hg-8ts"/>
-                            <constraint firstAttribute="trailing" secondItem="31g-CL-fhw" secondAttribute="trailing" id="DgH-El-mhH"/>
-                            <constraint firstItem="09a-YI-gaM" firstAttribute="top" secondItem="ex4-HG-1O8" secondAttribute="bottom" constant="8" id="LWa-1q-vih"/>
+                            <constraint firstItem="QdH-43-jfl" firstAttribute="top" secondItem="ex4-HG-1O8" secondAttribute="bottom" constant="8" id="4oS-LZ-jI5"/>
+                            <constraint firstItem="31g-CL-fhw" firstAttribute="top" secondItem="QdH-43-jfl" secondAttribute="bottom" constant="20" id="9mM-kd-8Py"/>
+                            <constraint firstAttribute="trailing" secondItem="31g-CL-fhw" secondAttribute="trailing" id="FM0-vG-9Ni"/>
                             <constraint firstItem="QdH-43-jfl" firstAttribute="leading" secondItem="cPD-ku-476" secondAttribute="leadingMargin" id="MhA-IZ-kca"/>
-                            <constraint firstItem="31g-CL-fhw" firstAttribute="leading" secondItem="cPD-ku-476" secondAttribute="leading" id="NeF-im-TIg"/>
-                            <constraint firstItem="31g-CL-fhw" firstAttribute="top" secondItem="QdH-43-jfl" secondAttribute="bottom" constant="20" id="Xku-jz-GYG"/>
-                            <constraint firstItem="QdH-43-jfl" firstAttribute="top" secondItem="ex4-HG-1O8" secondAttribute="bottom" constant="8" id="zec-Fd-KM3"/>
+                            <constraint firstItem="31g-CL-fhw" firstAttribute="leading" secondItem="cPD-ku-476" secondAttribute="leading" id="NxX-re-P0P"/>
+                            <constraint firstItem="09a-YI-gaM" firstAttribute="top" secondItem="ex4-HG-1O8" secondAttribute="bottom" constant="8" id="Od8-kf-pjs"/>
+                            <constraint firstItem="jXp-aB-kae" firstAttribute="top" secondItem="31g-CL-fhw" secondAttribute="bottom" id="jYx-0H-O9y"/>
                         </constraints>
                     </view>
                     <connections>

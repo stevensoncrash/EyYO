@@ -52,8 +52,9 @@ class AvatarPickerVC: UIViewController, UICollectionViewDelegate, UICollectionVi
         collectionView.reloadData()
     }
     
+    
         
-        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+       func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
             
             var numOfColumns : CGFloat = 3
             if UIScreen.main.bounds.width > 320 {
@@ -64,14 +65,17 @@ class AvatarPickerVC: UIViewController, UICollectionViewDelegate, UICollectionVi
             let padding : CGFloat = 40
             let cellDimension = ((collectionView.bounds.width - padding) - (numOfColumns - 1) * spaceBetweenCells) / numOfColumns
             return CGSize(width: cellDimension, height: cellDimension)
-        }
+      }
         
         func collectionView(_ collectionView: UICollectionView
             , didDeselectItemAt indexPath: IndexPath) {
             if avatarType == .dark {
                 UserDataService.instance.setAvatarName(avatarName: "dark\(indexPath.item)")
+                print("dark avatar selected")
             } else {
                 UserDataService.instance.setAvatarName(avatarName: "light\(indexPath.item)")
+                print("light avatar selected")
+
             }
             self.dismiss(animated: true, completion: nil)
         }
