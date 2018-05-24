@@ -22,6 +22,7 @@
 		4AC91E31209E985D00A50893 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AC91E2F209E985D00A50893 /* Main.storyboard */; };
 		4AC91E33209E985D00A50893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AC91E32209E985D00A50893 /* Assets.xcassets */; };
 		4AC91E36209E985D00A50893 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AC91E34209E985D00A50893 /* LaunchScreen.storyboard */; };
+		4AE0BA1220B6373A00232E74 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE0BA1120B6373A00232E74 /* CircleImage.swift */; };
 		4AF74E3620ABA68900D28E62 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF74E3520ABA68900D28E62 /* CreateAccountVC.swift */; };
 		A4D71BC4F587EDE4EB883203 /* Pods_EyYo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FE0309528F3066BCCDC679 /* Pods_EyYo.framework */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		4AC91E32209E985D00A50893 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AC91E35209E985D00A50893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AC91E37209E985D00A50893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AE0BA1120B6373A00232E74 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		4AF74E3520ABA68900D28E62 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		94FD892295A40392C00AAF51 /* Pods-EyYo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EyYo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EyYo/Pods-EyYo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +102,7 @@
 				4A01114F20A37BA20071667A /* GradientView.swift */,
 				4AB60C5320AD13B700613D1D /* RoundedButton.swift */,
 				4A202F9F20B37DF700618A80 /* AvatarCell.swift */,
+				4AE0BA1120B6373A00232E74 /* CircleImage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				4A7B849420A25F6C0078C8B5 /* ChannelVC.swift in Sources */,
 				4A202F9E20B3788800618A80 /* AvatarPickerVC.swift in Sources */,
 				4AB60C5420AD13B700613D1D /* RoundedButton.swift in Sources */,
+				4AE0BA1220B6373A00232E74 /* CircleImage.swift in Sources */,
 				4A7B849220A25F5D0078C8B5 /* ChatVC.swift in Sources */,
 				4AA49B1A20AF578F002714DB /* UserDataService.swift in Sources */,
 				4AF74E3620ABA68900D28E62 /* CreateAccountVC.swift in Sources */,

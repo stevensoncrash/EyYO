@@ -21,6 +21,24 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpView()
 
     }
+    
+    func setUpView(){
+        
+         usernameTxt.attributedPlaceholder = NSAttributedString(string:"username" , attributes: [NSAttributedStringKey.foregroundColor: EyYoPurplePlaceHolder] )
+         passwordTxt.attributedPlaceholder = NSAttributedString(string:"password" , attributes: [NSAttributedStringKey.foregroundColor: EyYoPurplePlaceHolder] )
+        
+        
+        
+    }
+    
+    // outlets
+    
+    @IBOutlet weak var usernameTxt: UITextField!
+    
+    @IBOutlet weak var passwordTxt: UITextField!
+    
+    
 }

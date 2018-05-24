@@ -30,12 +30,16 @@ class CreateAccountVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpView()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         if UserDataService.instance.avatarName != "" {
             userImg.image = UIImage(named: UserDataService.instance.avatarName)
             avatarName = UserDataService.instance.avatarName
+            if avatarName.contains("light") && bgColor == nil {
+                userImg.backgroundColor = UIColor.lightGray
+            }
         }
     }
     
@@ -82,12 +86,23 @@ class CreateAccountVC: UIViewController {
         let b = CGFloat(arc4random_uniform(255)) / 255
         
         bgColor = UIColor(red: r, green: g, blue: b, alpha: 1)
-        self.userImg.backgroundColor = self.bgColor
+        UIView.animate(withDuration: 0.2) {
+            self.userImg.backgroundColor = self.bgColor
+        }
+        
         
     }
     
     @IBAction func closedPressed(_ sender: Any) {
         performSegue(withIdentifier: UNWIND, sender: nil)
     }
+    
+        func setUpView(){
+            
+            usernameTxt.attributedPlaceholder = NSAttributedString(string:"username" , attributes: [NSAttributedStringKey.foregroundColor: EyYoPurplePlaceHolder] )
+              emailTxt.attributedPlaceholder = NSAttributedString(string:"email" , attributes: [NSAttributedStringKey.foregroundColor: EyYoPurplePlaceHolder] )
+            passwordTxt.attributedPlaceholder = NSAttributedString(string:"password" , attributes: [NSAttributedStringKey.foregroundColor: EyYoPurplePlaceHolder] )
+            
+        }
     
 }

@@ -60,7 +60,7 @@
                                 <rect key="frame" x="281" y="81.5" width="22" height="22"/>
                                 <state key="normal" image="addChannelButton"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="ciz-XV-LxS">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="ciz-XV-LxS" customClass="CircleImage" customModule="EyYo" customModuleProvider="target">
                                 <rect key="frame" x="16" y="572" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="Fka-rs-9hD"/>
@@ -251,6 +251,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="dKE-02-IwZ" id="Vho-9e-2oe"/>
+                        <outlet property="usernameTxt" destination="TPR-Uo-qaj" id="1f3-Rd-5Om"/>
                         <segue destination="xKO-2T-HnB" kind="show" identifier="toCreateAccount" id="hNG-UP-ZOx"/>
                     </connections>
                 </viewController>
@@ -352,7 +354,7 @@
                                 <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="DMG-7k-HWi">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="DMG-7k-HWi" customClass="CircleImage" customModule="EyYo" customModuleProvider="target">
                                 <rect key="frame" x="137.5" y="291" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="ERK-3W-dMg"/>
