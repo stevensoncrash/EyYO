@@ -61,7 +61,7 @@ class AuthServices {
             }
             else {
                 completion(false)
-                debugPrint(response.error as Any)
+                debugPrint(response.result.error as Any)
             }
         }
     }

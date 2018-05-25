@@ -56,9 +56,9 @@ class CreateAccountVC: UIViewController {
         AuthServices.instance.registerUser(email: email, password: password)
         { (success) in
             if success {
-        
                 AuthServices.instance.loginUser(email: email, password: password, completion: { (success) in
-                    if success {
+                    if success
+                    {
                         AuthServices.instance.createUser(name: name , email: email , avatarName: self.avatarName, avatarColor: self.avatarColor, completion: { (success) in
                             if success {
                                self.spinner.isHidden = true
@@ -69,9 +69,13 @@ class CreateAccountVC: UIViewController {
                         })
                     }
                     else {
-                        
+                        self.debugDescription
+                        print("registration error")
                     }
                 })
+            } else {
+                self.debugDescription
+                print("login error")
             }
         }
     }

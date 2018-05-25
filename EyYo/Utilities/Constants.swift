@@ -13,7 +13,7 @@ typealias CompletionHandler = (_ Succces: Bool) -> ()
 
 // URL Constants
 
-let BASE_URL = "https://eyyoh.herokuapp.com/"
+let BASE_URL = "https://eyyoo.herokuapp.com/v1/"
 let URL_REGISTER = "\(BASE_URL)account/register"
 let URL_LOGIN = "\(BASE_URL)account/login"
 let URL_USER_ADD = "\(BASE_URL)user/add"
