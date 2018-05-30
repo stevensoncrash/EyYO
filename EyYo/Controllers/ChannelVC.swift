@@ -26,6 +26,13 @@ class ChannelVC: UIViewController {
     
     @objc func userDataDidChange(_ notif: Notification) {
         if AuthServices.instance.isLoggedIn {
+            let profile = ProfileVC()
+            profile.modalPresentationStyle = .custom
+            present(profile, animated: true, completion: nil)
+        } else {
+            performSegue(withIdentifier: TO_LOGIN, sender: nil)
+        }
+        if AuthServices.instance.isLoggedIn {
             loginBtn.setTitle(UserDataService.instance.name, for: .normal)
             userImage.image = UIImage(named: UserDataService.instance.avatarName)
             userImage.backgroundColor = UserDataService.instance.returnUIColor(components: UserDataService.instance.avatarColor)

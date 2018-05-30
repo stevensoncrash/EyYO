@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4A01115020A37BA20071667A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A01114F20A37BA20071667A /* GradientView.swift */; };
 		4A0F23A620A54590000E24DD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F23A520A54590000E24DD /* Constants.swift */; };
+		4A19AAAD20BDEEC30020E9DA /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A19AAAB20BDEEC30020E9DA /* ProfileVC.swift */; };
+		4A19AAAE20BDEEC30020E9DA /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A19AAAC20BDEEC30020E9DA /* ProfileVC.xib */; };
 		4A202F9E20B3788800618A80 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A202F9D20B3788800618A80 /* AvatarPickerVC.swift */; };
 		4A202FA020B37DF700618A80 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A202F9F20B37DF700618A80 /* AvatarCell.swift */; };
 		4A4CF3FE20AA77F000CC8DEB /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4CF3FD20AA77F000CC8DEB /* LoginVC.swift */; };
@@ -32,6 +34,8 @@
 		27FE0309528F3066BCCDC679 /* Pods_EyYo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EyYo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A01114F20A37BA20071667A /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		4A0F23A520A54590000E24DD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4A19AAAB20BDEEC30020E9DA /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		4A19AAAC20BDEEC30020E9DA /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		4A202F9D20B3788800618A80 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		4A202F9F20B37DF700618A80 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		4A4CF3FD20AA77F000CC8DEB /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -74,6 +78,14 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		4A19AAAF20BDEEF40020E9DA /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				4A19AAAC20BDEEC30020E9DA /* ProfileVC.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
 		4A7B848820A22B220078C8B5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +104,7 @@
 				4A4CF3FD20AA77F000CC8DEB /* LoginVC.swift */,
 				4AF74E3520ABA68900D28E62 /* CreateAccountVC.swift */,
 				4A202F9D20B3788800618A80 /* AvatarPickerVC.swift */,
+				4A19AAAB20BDEEC30020E9DA /* ProfileVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -144,6 +157,7 @@
 		4AC91E2A209E985D00A50893 /* EyYo */ = {
 			isa = PBXGroup;
 			children = (
+				4A19AAAF20BDEEF40020E9DA /* XIBs */,
 				4AB60C5020ACCCD500613D1D /* Services */,
 				4A0F23A420A5457A000E24DD /* Utilities */,
 				4A7B849020A25F440078C8B5 /* Models */,
@@ -238,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A19AAAE20BDEEC30020E9DA /* ProfileVC.xib in Resources */,
 				4AC91E36209E985D00A50893 /* LaunchScreen.storyboard in Resources */,
 				4AC91E33209E985D00A50893 /* Assets.xcassets in Resources */,
 				4AC91E31209E985D00A50893 /* Main.storyboard in Resources */,
@@ -296,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A19AAAD20BDEEC30020E9DA /* ProfileVC.swift in Sources */,
 				4A7B849420A25F6C0078C8B5 /* ChannelVC.swift in Sources */,
 				4A202F9E20B3788800618A80 /* AvatarPickerVC.swift in Sources */,
 				4AB60C5420AD13B700613D1D /* RoundedButton.swift in Sources */,
