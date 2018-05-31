@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -157,18 +157,21 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="mkK-He-fIo" eventType="touchUpInside" id="yCL-1y-AEE"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="tkM-qW-EdV">
                                 <rect key="frame" x="62.5" y="160" width="250" height="80"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TPR-Uo-qaj">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TPR-Uo-qaj">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="17"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="3zD-EV-wIj"/>
                                         </constraints>
                                         <color key="textColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Czy-Je-vL3">
                                         <rect key="frame" x="0.0" y="31" width="250" height="2"/>
@@ -236,6 +239,10 @@
                                     <action selector="createAccntBtnPressed:" destination="mkK-He-fIo" eventType="touchUpInside" id="8mL-HF-xaB"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ymf-Pp-UGc">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -243,16 +250,19 @@
                             <constraint firstItem="tkM-qW-EdV" firstAttribute="top" secondItem="grf-gT-hb6" secondAttribute="bottom" constant="40" id="Dnw-Ol-Can"/>
                             <constraint firstItem="min-uh-MTr" firstAttribute="top" secondItem="FNv-6D-u6K" secondAttribute="bottom" constant="10" id="Fq1-rd-1SX"/>
                             <constraint firstItem="pQz-q7-m6B" firstAttribute="top" secondItem="YEO-Z3-f80" secondAttribute="bottom" id="KWV-vu-DSF"/>
+                            <constraint firstItem="ymf-Pp-UGc" firstAttribute="centerY" secondItem="NWf-5s-fKj" secondAttribute="centerY" constant="-100" id="N1d-ud-aUx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="min-uh-MTr" secondAttribute="trailing" id="WrE-71-PP8"/>
                             <constraint firstItem="YEO-Z3-f80" firstAttribute="centerX" secondItem="NWf-5s-fKj" secondAttribute="centerX" id="XFl-Wc-b7r"/>
                             <constraint firstItem="grf-gT-hb6" firstAttribute="centerX" secondItem="NWf-5s-fKj" secondAttribute="centerX" id="YH7-Re-cvD"/>
                             <constraint firstItem="grf-gT-hb6" firstAttribute="top" secondItem="FNv-6D-u6K" secondAttribute="bottom" constant="60" id="bfE-8h-ZFp"/>
+                            <constraint firstItem="ymf-Pp-UGc" firstAttribute="centerX" secondItem="NWf-5s-fKj" secondAttribute="centerX" id="jVA-Oc-cMr"/>
                             <constraint firstItem="pQz-q7-m6B" firstAttribute="centerX" secondItem="NWf-5s-fKj" secondAttribute="centerX" id="viO-xF-ZbV"/>
                             <constraint firstItem="YEO-Z3-f80" firstAttribute="top" secondItem="tkM-qW-EdV" secondAttribute="bottom" constant="40" id="xVc-6T-6Uh"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="passwordTxt" destination="dKE-02-IwZ" id="Vho-9e-2oe"/>
+                        <outlet property="spinner" destination="ymf-Pp-UGc" id="SwA-95-5j2"/>
                         <outlet property="usernameTxt" destination="TPR-Uo-qaj" id="1f3-Rd-5Om"/>
                         <segue destination="xKO-2T-HnB" kind="show" identifier="toCreateAccount" id="hNG-UP-ZOx"/>
                     </connections>

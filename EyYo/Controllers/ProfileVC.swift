@@ -36,6 +36,7 @@ class ProfileVC: UIViewController {
     
     
     func setUpView() {
+        
         userName.text = UserDataService.instance.name
         userEmail.text = UserDataService.instance.email
         profileImage.image = UIImage(named: UserDataService.instance.avatarName)
