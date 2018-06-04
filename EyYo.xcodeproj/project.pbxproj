@@ -20,6 +20,7 @@
 		4A7B849220A25F5D0078C8B5 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7B849120A25F5D0078C8B5 /* ChatVC.swift */; };
 		4A7B849420A25F6C0078C8B5 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7B849320A25F6C0078C8B5 /* ChannelVC.swift */; };
 		4AA49B1A20AF578F002714DB /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA49B1920AF578F002714DB /* UserDataService.swift */; };
+		4AAEF03320C5B9040070163C /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAEF03220C5B9040070163C /* ChannelCell.swift */; };
 		4AB60C5220ACCCED00613D1D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB60C5120ACCCED00613D1D /* AuthService.swift */; };
 		4AB60C5420AD13B700613D1D /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB60C5320AD13B700613D1D /* RoundedButton.swift */; };
 		4AC91E2C209E985D00A50893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC91E2B209E985D00A50893 /* AppDelegate.swift */; };
@@ -49,6 +50,7 @@
 		4A7B849120A25F5D0078C8B5 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		4A7B849320A25F6C0078C8B5 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		4AA49B1920AF578F002714DB /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
+		4AAEF03220C5B9040070163C /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
 		4AB60C5120ACCCED00613D1D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		4AB60C5320AD13B700613D1D /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		4AC91E28209E985D00A50893 /* EyYo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EyYo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +122,7 @@
 				4AB60C5320AD13B700613D1D /* RoundedButton.swift */,
 				4A202F9F20B37DF700618A80 /* AvatarCell.swift */,
 				4AE0BA1120B6373A00232E74 /* CircleImage.swift */,
+				4AAEF03220C5B9040070163C /* ChannelCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A19AAAD20BDEEC30020E9DA /* ProfileVC.swift in Sources */,
+				4AAEF03320C5B9040070163C /* ChannelCell.swift in Sources */,
 				4A7B849420A25F6C0078C8B5 /* ChannelVC.swift in Sources */,
 				4A202F9E20B3788800618A80 /* AvatarPickerVC.swift in Sources */,
 				4AB60C5420AD13B700613D1D /* RoundedButton.swift in Sources */,
