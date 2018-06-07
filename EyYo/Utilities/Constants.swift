@@ -41,7 +41,7 @@ let HEADER = [
 ]
 
 let BEARER_HEADER = [ 
-    "Authorization":"Bearer \(AuthServices.instance.authToken)",
+    "Authorization":"Bearer \(AuthService.instance.authToken)",
     "Content-Type":"application/json; charset=utf-8"]
 
 // Colors

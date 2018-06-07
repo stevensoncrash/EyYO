@@ -76,9 +76,9 @@ class UserDataService {
         avatarColor = ""
         email = ""
         name = ""
-        AuthServices.instance.isLoggedIn = false
-        AuthServices.instance.userEmail = ""
-        AuthServices.instance.authToken = ""
+        AuthService.instance.isLoggedIn = false
+        AuthService.instance.userEmail = ""
+        AuthService.instance.authToken = ""
     }
    
     

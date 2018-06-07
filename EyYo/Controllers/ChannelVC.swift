@@ -23,6 +23,11 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.delegate = self
         self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 60
         NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.userDataDidChange(_:)), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
+        SocketService.instance.getChannel { (success) in
+            if success {
+                self.tableView.reloadData()
+            }
+        }
         
     }
     
@@ -42,7 +47,7 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     @IBAction func loginBtnPressed(_ sender: Any) {
-        if AuthServices.instance.isLoggedIn {
+        if AuthService.instance.isLoggedIn {
             let profile = ProfileVC()
             profile.modalPresentationStyle = .custom
             present(profile, animated: true, completion: nil)
@@ -53,7 +58,7 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func setupUserInfo(){
        
-        if AuthServices.instance.isLoggedIn {
+        if AuthService.instance.isLoggedIn {
             loginBtn.setTitle(UserDataService.instance.name, for: .normal)
             userImage.image = UIImage(named: UserDataService.instance.avatarName)
             userImage.backgroundColor = UserDataService.instance.returnUIColor(components: UserDataService.instance.avatarColor)
