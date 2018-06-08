@@ -31,7 +31,7 @@ class ChannelCell: UITableViewCell {
         // Configure the view for the selected state
     }
     func configuerCell(channel: Channel){
-        let title = channel.name ?? ""
+        let title = channel.channelTitle ?? ""
         channelName.text = "#\(title)"
         
     }

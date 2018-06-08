@@ -58,7 +58,7 @@ class AuthService {
             }
             else {
                 completion(false)
-                debugPrint(response.result.error as? Any)
+                debugPrint(response.result.error as Any)
             }
         }
         
@@ -74,7 +74,7 @@ class AuthService {
         ]
         
         Alamofire.request(URL_LOGIN, method: .post, parameters: body, encoding: JSONEncoding.default, headers: HEADER).responseJSON { (response) in
-            //SWIFTYJSON parsing
+           
             if response.result.error == nil {
                 guard let data = response.data else { return }
                 do {
