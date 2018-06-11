@@ -218,6 +218,16 @@
                                     <action selector="closedBtnPressed:" destination="mkK-He-fIo" eventType="touchUpInside" id="jxL-D9-iCC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQz-q7-m6B">
+                                <rect key="frame" x="82" y="330" width="211" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Don't have an account? Sign up here!">
+                                    <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="createAccntBtnPressed:" destination="mkK-He-fIo" eventType="touchUpInside" id="8mL-HF-xaB"/>
+                                </connections>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="grf-gT-hb6">
                                 <rect key="frame" x="131.5" y="80" width="112.5" height="40"/>
                                 <subviews>
@@ -236,16 +246,6 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQz-q7-m6B">
-                                <rect key="frame" x="82" y="330" width="211" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <state key="normal" title="Don't have an account? Sign up here!">
-                                    <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="createAccntBtnPressed:" destination="mkK-He-fIo" eventType="touchUpInside" id="8mL-HF-xaB"/>
-                                </connections>
-                            </button>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ymf-Pp-UGc">
                                 <rect key="frame" x="169" y="215" width="37" height="37"/>
                                 <color key="color" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -601,6 +601,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="channelNameLbl" destination="HW6-hY-wsd" id="yhw-Tt-0wV"/>
                         <outlet property="menuBtn" destination="FyQ-IL-hRO" id="PLz-c8-3fL"/>
                     </connections>
                 </viewController>
