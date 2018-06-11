@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EyYo/Services/MessageService.swift"
-            timestampString = "550437003.9225481"
+            timestampString = "550440730.362355"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
@@ -58,23 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EyYo/Services/AuthService.swift"
-            timestampString = "550190635.690883"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
-            landmarkName = "setUserInfo(data:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EyYo/Services/AuthService.swift"
-            timestampString = "550190635.69124"
+            timestampString = "550440730.36245"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "138"
@@ -86,75 +70,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EyYo/Services/AuthService.swift"
-            timestampString = "550190635.691483"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
-            landmarkName = "findUserByEmail(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EyYo/Services/AuthService.swift"
-            timestampString = "550190635.691695"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
-            landmarkName = "findUserByEmail(completion:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EyYo.AuthService.findUserByEmail(completion: (Swift.Bool) -&gt; ()) -&gt; ()"
-                  moduleName = "EyYo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/stephenreyes/Developer/EyYo/EyYo/Services/AuthService.swift"
-                  timestampString = "550437004.0350291"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "123"
-                  endingLineNumber = "123"
-                  offsetFromSymbolStart = "25">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in EyYo.AuthService.findUserByEmail(completion: (Swift.Bool) -&gt; ()) -&gt; ()"
-                  moduleName = "EyYo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/stephenreyes/Developer/EyYo/EyYo/Services/AuthService.swift"
-                  timestampString = "550437004.037015"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "125"
-                  endingLineNumber = "125"
-                  offsetFromSymbolStart = "33">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EyYo/Services/MessageService.swift"
-            timestampString = "550437003.922689"
+            timestampString = "550440730.3625081"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
@@ -170,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EyYo/Services/MessageService.swift"
-            timestampString = "550437003.922736"
+            timestampString = "550440730.362558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
@@ -186,45 +106,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EyYo/Services/AuthService.swift"
-            timestampString = "550190635.691985"
+            timestampString = "550440730.362608"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
-            landmarkName = "findUserByEmail(completion:)"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "setUserInfo(data:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EyYo.AuthService.findUserByEmail(completion: (Swift.Bool) -&gt; ()) -&gt; ()"
-                  moduleName = "EyYo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/stephenreyes/Developer/EyYo/EyYo/Services/AuthService.swift"
-                  timestampString = "550190629.731301"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "123"
-                  endingLineNumber = "123"
-                  offsetFromSymbolStart = "25">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in EyYo.AuthService.findUserByEmail(completion: (Swift.Bool) -&gt; ()) -&gt; ()"
-                  moduleName = "EyYo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/stephenreyes/Developer/EyYo/EyYo/Services/AuthService.swift"
-                  timestampString = "550190629.734107"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "125"
-                  endingLineNumber = "125"
-                  offsetFromSymbolStart = "33">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -234,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EyYo/Services/AuthService.swift"
-            timestampString = "550190689.6856461"
+            timestampString = "550440730.362659"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
             landmarkName = "findUserByEmail(completion:)"
             landmarkType = "7">
          </BreakpointContent>

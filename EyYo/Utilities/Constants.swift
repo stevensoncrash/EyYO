@@ -14,11 +14,12 @@ typealias CompletionHandler = (_ Succces: Bool) -> ()
 // URL Constants
 
 let BASE_URL = "https://eyyyo.herokuapp.com/v1/"
-let URL_REGISTER = "\(BASE_URL)account/register"
-let URL_LOGIN = "\(BASE_URL)account/login"
-let URL_USER_ADD = "\(BASE_URL)user/add"
+let URL_REGISTER = "\(BASE_URL)account/register/"
+let URL_LOGIN = "\(BASE_URL)account/login/"
+let URL_USER_ADD = "\(BASE_URL)user/add/"
 let URL_USER_BY_EMAIL = "\(BASE_URL)user/byEmail/"
 let URL_GET_CHANNELS = "\(BASE_URL)channel/"
+let URL_GET_MESSAGES = "\(BASE_URL)message/bychannel/"
 
 
 // identifiers for segues
