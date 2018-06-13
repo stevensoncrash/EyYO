@@ -55,22 +55,24 @@ class MessageService {
             if response.result.error == nil {
                 self.clearmessages()
                 guard let data = response.data else {return}
-                if let json =  JSON(data: data).array {
-                    for item in json {
-                        let messageBody = item["messageBody"].stringValue
-                        let channelID = item["channelID"].stringValue
-                        let userName = item["userName"].stringValue
-                        let userAvatar = item["userAvatar"].stringValue
-                        let userAvatarColor = item["userAvatarColor"].stringValue
-                        let timeStamp = item["timeStamp"].stringValue
-                        let id = item["_id"].stringValue
-                        
-                        let message = Message(message: messageBody, name: userName, channelId: channelID, userAvatar: userAvatar, userAvatarColor: userAvatarColor, id: id, timeStamp: timeStamp)
-                        self.messages.append(message)
-                    }
-                    print(self.messages)
-                    completion(true)
+                guard let json = try? JSON(data: data), let jsonArray = json.array else {
+                    //Json parse error
+                    return
                 }
+                for item in jsonArray {
+                    let messageBody = item["messageBody"].stringValue
+                    let channelID = item["channelID"].stringValue
+                    let userName = item["userName"].stringValue
+                    let userAvatar = item["userAvatar"].stringValue
+                    let userAvatarColor = item["userAvatarColor"].stringValue
+                    let timeStamp = item["timeStamp"].stringValue
+                    let id = item["_id"].stringValue
+                    
+                    let message = Message(message: messageBody, name: userName, channelId: channelID, userAvatar: userAvatar, userAvatarColor: userAvatarColor, id: id, timeStamp: timeStamp)
+                    self.messages.append(message)
+                }
+                print(self.messages)
+                completion(true)
             } else {
                 debugPrint(response.result.error as Any)
                 completion(false)
