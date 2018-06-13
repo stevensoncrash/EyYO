@@ -14,12 +14,33 @@ class ChatVC: UIViewController {
     
     @IBOutlet weak var menuBtn: UIButton!
     @IBOutlet weak var channelNameLbl: UILabel!
+    @IBOutlet weak var messageBox: UITextField!
+    
+    // Actions
+    
+    @IBAction func sendMessagePressed(_ sender: Any) {
+        if AuthService.instance.isLoggedIn{
+            guard let channelID = MessageService.instance.selectedChannel?.id else {return}
+            guard let message = messageBox.text else {return}
+        
+            SocketService.instance.addMessage(messageBody: message, userID: UserDataService.instance.id, ChannelID: channelID) { (success) in
+                if success {
+                    self.messageBox.text = ""
+                    self.messageBox.resignFirstResponder()
+                }
+            }
+        } else {
+            debugPrint("sendMessagePressedError")
+        }
+    }
     
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
- 
+        view.bindToKeyboard()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(ChatVC.handleTap))
+            view.addGestureRecognizer(tap)
         menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
@@ -75,4 +96,9 @@ class ChatVC: UIViewController {
         }
         
     }
+    
+    @objc func handleTap(){
+        view.endEditing(true)
+    }
+    
 }

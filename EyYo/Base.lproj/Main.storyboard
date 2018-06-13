@@ -592,17 +592,39 @@
                                     <constraint firstItem="HW6-hY-wsd" firstAttribute="centerX" secondItem="hx4-VL-xq7" secondAttribute="centerX" id="p8I-Gi-0vy"/>
                                 </constraints>
                             </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eQN-ff-BSa">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ekd-mg-5T6"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGm-RL-QMf">
+                                <rect key="frame" x="337" y="632" width="30" height="30"/>
+                                <state key="normal" image="send"/>
+                                <connections>
+                                    <action selector="sendMessagePressed:" destination="Nxp-hL-Ln8" eventType="touchUpInside" id="zco-ou-vbC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="hx4-VL-xq7" firstAttribute="top" secondItem="Js4-FL-PQJ" secondAttribute="bottom" id="3dd-Rk-Ite"/>
                             <constraint firstItem="hx4-VL-xq7" firstAttribute="trailing" secondItem="zKZ-tf-Zf0" secondAttribute="trailing" id="BNb-y5-eJi"/>
                             <constraint firstItem="hx4-VL-xq7" firstAttribute="leading" secondItem="zKZ-tf-Zf0" secondAttribute="leading" id="ELk-rz-CmF"/>
+                            <constraint firstAttribute="trailing" secondItem="eQN-ff-BSa" secondAttribute="trailing" id="LPV-oj-wLE"/>
+                            <constraint firstItem="eQN-ff-BSa" firstAttribute="leading" secondItem="zKZ-tf-Zf0" secondAttribute="leading" id="Qls-7T-yIf"/>
+                            <constraint firstAttribute="trailing" secondItem="IGm-RL-QMf" secondAttribute="trailing" constant="8" id="er0-kV-0yJ"/>
+                            <constraint firstItem="xbd-pc-XpK" firstAttribute="top" secondItem="eQN-ff-BSa" secondAttribute="bottom" id="pmi-ap-3eh"/>
+                            <constraint firstItem="IGm-RL-QMf" firstAttribute="centerY" secondItem="eQN-ff-BSa" secondAttribute="centerY" id="raj-ec-V3Z"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="channelNameLbl" destination="HW6-hY-wsd" id="yhw-Tt-0wV"/>
                         <outlet property="menuBtn" destination="FyQ-IL-hRO" id="PLz-c8-3fL"/>
+                        <outlet property="messageBox" destination="eQN-ff-BSa" id="ccB-9w-iMJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kDo-MG-pNB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -615,6 +637,7 @@
         <image name="closeButton" width="28" height="28"/>
         <image name="menuProfileIcon" width="99" height="99"/>
         <image name="profileDefault" width="192" height="192"/>
+        <image name="send" width="30" height="30"/>
         <image name="smackBack" width="28" height="28"/>
         <image name="smackBurger" width="40" height="40"/>
         <image name="smackLogo" width="48" height="40"/>
