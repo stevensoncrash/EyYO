@@ -14,7 +14,6 @@ class ChannelCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-    
     //outlets
 
     @IBOutlet weak var channelName: UILabel!

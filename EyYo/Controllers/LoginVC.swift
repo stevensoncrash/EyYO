@@ -9,11 +9,11 @@
 import UIKit
 
 class LoginVC: UIViewController {
+    
    //actions
     @IBAction func createAccntBtnPressed(_ sender: Any) {
         performSegue(withIdentifier: TO_CREATE_ACCOUNT, sender: nil)
     }
-    
     
     @IBAction func loginPressed(_ sender: Any) {
         spinner.isHidden = false
@@ -41,8 +41,6 @@ class LoginVC: UIViewController {
         
     }
 
-    
-    
     @IBAction func closedBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
@@ -58,10 +56,6 @@ class LoginVC: UIViewController {
          spinner.isHidden = true
          usernameTxt.attributedPlaceholder = NSAttributedString(string:"email" , attributes: [NSAttributedStringKey.foregroundColor: EyYoPurplePlaceHolder] )
          passwordTxt.attributedPlaceholder = NSAttributedString(string:"password" , attributes: [NSAttributedStringKey.foregroundColor: EyYoPurplePlaceHolder] )
-        
-        
-        
-        
         
     }
     

@@ -131,8 +131,8 @@ class AuthService {
     }
     
     func setUserInfo(data: Data) {
-        do{
-            let json = try JSON(data: data)
+
+        guard let json = try? JSON(data: data) else {return}
             let id = json["_id"].stringValue
             let color = json["avatarColor"].stringValue
             let avatarName = json["avatarName"].stringValue
@@ -140,9 +140,7 @@ class AuthService {
             let name = json["name"].stringValue
             
             UserDataService.instance.setUserData(id: id, avatarName: avatarName, avatarColor: color, email: email, name: name)
-        } catch {
-            debugPrint("setUserInfoError")
-        }
+        
         
     }
     

@@ -56,7 +56,7 @@ class MessageService {
                 self.clearmessages()
                 guard let data = response.data else {return}
                 guard let json = try? JSON(data: data), let jsonArray = json.array else {
-                    //Json parse error
+                    print(response.result.error as Any)
                     return
                 }
                 for item in jsonArray {
