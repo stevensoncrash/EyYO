@@ -78,7 +78,7 @@ class AuthService {
             if response.result.error == nil {
                 guard let data = response.data else {return}
                 guard let json = try? JSON(data: data), let jsonArray = json.array else {
-                    //Json parse error
+                    debugPrint(response.result.error as Any)
                     return
                 }
                     self.userEmail = json["user"].stringValue
@@ -86,9 +86,9 @@ class AuthService {
                 }
                 self.isLoggedIn = true
                 completion(true)
-            }
+        }
     }
-    
+
     func createUser(name: String, email: String, avatarName: String, avatarColor: String, completion: @escaping CompletionHandler) {
         
         let lowerCaseEmail = email.lowercased()
@@ -113,16 +113,17 @@ class AuthService {
             }
         }
     }
-    
+           
     func findUserByEmail(completion: @escaping CompletionHandler) {
-
-        Alamofire.request("\(URL_USER_BY_EMAIL)\(userEmail)", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
-
+        
+        let email = UserDataService.instance.email
+        Alamofire.request("\(URL_USER_BY_EMAIL)\(email)", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
+            
             if response.result.error == nil {
                 guard let data = response.data else { return }
                 self.setUserInfo(data: data)
                 completion(true)
-
+                
             } else {
                 completion(false)
                 debugPrint(response.result.error as Any)
@@ -131,8 +132,7 @@ class AuthService {
     }
     
     func setUserInfo(data: Data) {
-
-        guard let json = try? JSON(data: data) else {return}
+        guard let json =  try? JSON(data: data) else {return}
             let id = json["_id"].stringValue
             let color = json["avatarColor"].stringValue
             let avatarName = json["avatarName"].stringValue
@@ -140,8 +140,6 @@ class AuthService {
             let name = json["name"].stringValue
             
             UserDataService.instance.setUserData(id: id, avatarName: avatarName, avatarColor: color, email: email, name: name)
-        
-        
     }
     
     
