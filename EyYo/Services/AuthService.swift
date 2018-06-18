@@ -34,7 +34,7 @@ class AuthService {
         }
     }
     
-    var userEmail: String {
+    var email: String {
         get {
             return defaults.value(forKey: USER_EMAIL) as! String
         }
@@ -81,7 +81,7 @@ class AuthService {
                     debugPrint(response.result.error as Any)
                     return
                 }
-                    self.userEmail = json["user"].stringValue
+                    self.email = json["user"].stringValue
                     self.authToken = json["token"].stringValue
                 }
                 self.isLoggedIn = true
@@ -117,6 +117,7 @@ class AuthService {
     func findUserByEmail(completion: @escaping CompletionHandler) {
         
         let email = UserDataService.instance.email
+        
         Alamofire.request("\(URL_USER_BY_EMAIL)\(email)", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
             
             if response.result.error == nil {

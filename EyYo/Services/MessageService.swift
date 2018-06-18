@@ -28,7 +28,6 @@ class MessageService {
 //                //proceed normally
 //            }
 //
-            
             if response.result.error == nil {
                 guard let data = response.data else { return }
                 if let json = try! JSON(data: data).array {

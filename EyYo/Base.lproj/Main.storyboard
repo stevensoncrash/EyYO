@@ -218,8 +218,8 @@
                                     <action selector="closedBtnPressed:" destination="mkK-He-fIo" eventType="touchUpInside" id="jxL-D9-iCC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQz-q7-m6B">
-                                <rect key="frame" x="82" y="330" width="211" height="27"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQz-q7-m6B">
+                                <rect key="frame" x="82" y="331" width="211" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="Don't have an account? Sign up here!">
                                     <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -600,6 +600,9 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="messageBoxEditing:" destination="Nxp-hL-Ln8" eventType="editingChanged" id="46h-e6-vJY"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGm-RL-QMf">
                                 <rect key="frame" x="337" y="632" width="30" height="30"/>
@@ -688,6 +691,7 @@
                         <outlet property="channelNameLbl" destination="HW6-hY-wsd" id="yhw-Tt-0wV"/>
                         <outlet property="menuBtn" destination="FyQ-IL-hRO" id="PLz-c8-3fL"/>
                         <outlet property="messageBox" destination="eQN-ff-BSa" id="ccB-9w-iMJ"/>
+                        <outlet property="sendBtn" destination="IGm-RL-QMf" id="0eb-PY-oOT"/>
                         <outlet property="tableView" destination="mYg-2L-veN" id="bht-YY-rwe"/>
                     </connections>
                 </viewController>

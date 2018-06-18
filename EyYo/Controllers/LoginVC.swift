@@ -33,7 +33,7 @@ class LoginVC: UIViewController {
                         self.spinner.stopAnimating()
                         self.dismiss(animated: true , completion: nil)
                     } else {
-                        //log
+                        debugPrint("login error")
                     }
                 })
             }
