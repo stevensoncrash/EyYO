@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
+import Starscream
 
 class AuthService {
     
@@ -133,7 +134,7 @@ class AuthService {
     }
     
     func setUserInfo(data: Data) {
-        guard let json =  try? JSON(data: data) else {return}
+        guard let json =  try?  JSON(data: data) else {return}
             let id = json["_id"].stringValue
             let color = json["avatarColor"].stringValue
             let avatarName = json["avatarName"].stringValue

@@ -56,7 +56,7 @@ class SocketService: NSObject {
     }
     
     // oh heeeeeey! this is where the app is going to be listening for real time messages.
-    func getChatMessage(comepletion: @escaping CompletionHandler) {
+    func getChatMessage(comepletion: @escaping (_ newMessage: Message) -> Void) {
         socket.on("messageCreated") { (dataArray, ack) in
             
             guard let msgBody = dataArray[0] as? String else {return}
@@ -67,31 +67,25 @@ class SocketService: NSObject {
             guard let id = dataArray[6] as? String else {return}
             guard let timeStamp = dataArray[7] as? String else {return}
             
-            if channelID == MessageService.instance.selectedChannel?.id && AuthService.instance.isLoggedIn {
-                let newMessage = Message(message: msgBody, userName: userName, channelId: channelID, userAvatar: userAvatar, userAvatarColor: userAvatarColor, id: id, timeStamp: timeStamp)
-                MessageService.instance.messages.append(newMessage)
-                comepletion(true)
-            } else {
-                comepletion(false)
-            }
-           
-            
+             let newMessage = Message(message: msgBody, userName: userName, channelId: channelID, userAvatar: userAvatar, userAvatarColor: userAvatarColor, id: id, timeStamp: timeStamp)
+         
             
         }
     }
     
     
     
+    func getTypingUsers(_ completionHandler: @escaping(_ typingUsers:[String: String]) -> Void) {
+        
+        socket.on("userTypingUpdate") { (dataArray, ack) in
+            guard let typingUsers = dataArray[0] as? [String: String] else { return }
+            completionHandler(typingUsers)
+        }
+        
+        
+    }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
  }
     
     
