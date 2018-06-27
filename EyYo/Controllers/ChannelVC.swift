@@ -94,7 +94,7 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }
         let index = IndexPath(row: indexPath.row, section: 0)
         tableView.reloadRows(at: [index], with: .none)
-        tableView.selectRow(at: [index], animated: false, scrollPosition: .none)
+        tableView.selectRow(at: index, animated: false, scrollPosition: .none)
         
         
         NotificationCenter.default.post(name: NOTIF_CHANNEL_SELECTED, object: nil)
