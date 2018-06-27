@@ -36,13 +36,10 @@ class ChannelCell: UITableViewCell {
         
         for id in MessageService.instance.unreadChannels {
             if id == channel.id {
-                channelName.font = UIFont(name: "HelveticaNeue-Bold", size: 22
-                )
+                channelName.font = UIFont(name: "HelveticaNeue-Bold", size: 22)
             }
             
         }
-        
-        
         
     }
 

@@ -69,7 +69,7 @@ class SocketService: NSObject {
             
             let newMessage = Message(message: msgBody, userName: userName, channelId: channelID, userAvatar: userAvatar, userAvatarColor: userAvatarColor, id: id, timeStamp: timeStamp)
          
-            completion(newMessage)
+            comepletion(newMessage)
         }
     }
     
